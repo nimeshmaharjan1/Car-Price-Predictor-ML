@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --headerFont: 'Montserrat', sans-serif;
+    --bodyFont: 'Roboto', sans-serif;
+}
+
+
+.bg-dark{
+    background-color: #75767B;
+}
+
+.about{
+    border: 1px solid white;
+    border-radius: 22px;
+}
+
+
+nav{
+    color: white;
+    padding-top: 0.5rem;
+}
+
+nav a {
+    font-size: 20px;
+    margin-right: 2rem;
+    text-decoration: none;
+    padding: 8px 20px 8px 20px;
+}
+
+h2{
+    font-family: var(--headerFont);
+}
+
+nav a:hover{
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.7s;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+h1, label{
+    font-family: var(--headerFont);
+}
+
+h1{
+    text-align: center;
+    font-size: 58px;
+}
+
+label{
+    font-size: 18px;
+}
+
+select, label{
+    margin-bottom: 0.5rem;
+}
+
+
+.footer-name{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}        
+
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 6px 20px 20px 20px;
+}
+  
+.input-field {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+label{
+    margin-top: 1rem;
+}
+
+h2, button, .footer-name{
+    font-weight: bold;
+    font-family: var(--bodyFont);
+}
+
+button{
+    position: relative;
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    background-color: hsl(0, 59%, 44%);
+    font-size: 20px;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6e2525;
+    z-index: -1;
+    border-radius: 7px;
+    transform: translateY(5px);
+}
+button:active{
+    transform: translateY(5px);
+}
+
+button:active::before{
+    transform: translateY(0);
+}
+
+.pageHeader{
+    font-family: var(--mainFont);
+    font-size: 9rem;
+    opacity: .1;
+    color: white;
+    text-align: left;
+  }
+
+  .hero{
+    height: 37.5rem;
+    width: 37.5rem;
+  }
+  .scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  .up-arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  i img:hover{
+      transform: translateY(-10px);
+      transition: 0.3s;
+  }
+  
+ #clock {
+    color: #A52422;font-size: 1.8rem;font-weight: 700;
+   }
